@@ -1,0 +1,27 @@
+{
+  "name": "oop_project",
+  "version": "1.0.0",
+  "description": "This is my OOP project for generating staff webpage",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Skirkzzz/OOP_Project.git"
+  },
+  "author": "Selina Kirkham",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Skirkzzz/OOP_Project/issues"
+  },
+  "homepage": "https://github.com/Skirkzzz/OOP_Project#readme",
+  "dependencies": {
+    "inquirer": "^8.2.4",
+    "jest": "^28.1.0"
+  }
+}
