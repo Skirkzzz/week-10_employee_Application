@@ -8,7 +8,6 @@ const OUTPUT_DIR = path.resolve(__dirname, "dist");
 const outputPath = path.join(OUTPUT_DIR, "team.html");
 const generateTeam = require("./src/generateHTML.js");
 
-
 teamArray = [];
 
 function runApp() {
@@ -123,3 +122,57 @@ function runApp() {
         createTeam();
       });
   }
+  function addIntern() {
+    inquirer
+      .prompt([
+        {
+          type: "input",
+          name: "internName",
+          message: "What is the intern's name?",
+        },
+
+        {
+          type: "input",
+          name: "internId",
+          message: "What is the intern's employee ID number?",
+        },
+
+        {
+          type: "input",
+          name: "internEmail",
+          message: "What is the intern's email address?",
+        },
+
+        {
+          type: "input",
+          name: "internSchool",
+          message: "What school does the intern attend?",
+        },
+      ])
+      .then((answers) => {
+        const intern = new Intern(
+          answers.internName,
+          answers.internId,
+          answers.internEmail,
+          answers.internSchool
+        );
+        teamArray.push(intern);
+        createTeam();
+      });
+  }
+  // return to menu with option to add another team member create team
+  // Would you like to add a team member?
+  // Yes || No
+  // If Yes --> Then select an employee role for your new team member: Manager, Engineer, Intern
+  // If No --> Create Team
+
+  function htmlBuilder() {
+    console.log("Team created!");
+
+    fs.writeFileSync(outputPath, generateTeam(teamArray), "UTF-8");
+  }
+
+  createTeam();
+}
+
+runApp();
