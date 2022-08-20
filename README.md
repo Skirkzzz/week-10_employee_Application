@@ -8,7 +8,8 @@ This project is a Node.js command-line application that takes in information abo
 
 Here is a link to a walkthrough video that demonstrates its functionality and all of the tests passing.
 
-XXXXXXXXXX
+https://watch.screencastify.com/v/sEg1JY2IyLRYUy9wps7k
+https://watch.screencastify.com/v/Dis4Q1D6dlptu75E844G
 
 The application uses Jest [Jest](https://www.npmjs.com/package/jest) to run the unit tests and [Inquirer](https://www.npmjs.com/package/inquirer) for collecting input from the user.
 
