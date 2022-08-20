@@ -111,6 +111,11 @@ The following image shows a mock-up of the generated HTML’s appearance and fun
 
 ![HTML webpage titled “My Team” features five boxes listing employee names, titles, and other key info.](./Assets/10-object-oriented-programming-homework-demo.png)
 
+## Licence
+
+MIT
+
 ## Author
 
 skirkzzz@gmail.com
+https://github.com/Skirkzzz
